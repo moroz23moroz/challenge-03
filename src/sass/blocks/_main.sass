@@ -1,0 +1,31 @@
+.circle-container
+    position: fixed
+    top: -100px
+    left: -100px
+.circle
+    background-color: #ff7979
+    height: 200px
+    width: 200px
+    border-radius: 50%
+    position: relative
+    transition: transform 0.5s
+    transition-timing-function: linear
+    & button
+        cursor: pointer
+        position: absolute
+        top: 50%
+        left: 50%
+        height: 100px
+        font-size: 26px
+        color: white
+        &:focus
+            outline: none
+        &#open
+            left: 60%
+        &#close
+            top: 60%
+            transform: rotate(90deg)
+            transform-origin: top left
+.content
+    & img
+        max-width: 100%
